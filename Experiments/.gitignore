@@ -1,0 +1,13 @@
+.vscode/launch.json
+data
+raw_data
+__pycache__
+.DS_STORE 
+training_runs
+models/*
+results*
+trained_models
+logs_here
+old*
+finished_models
+eval_runs

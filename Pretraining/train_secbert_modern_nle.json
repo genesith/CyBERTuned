@@ -1,0 +1,26 @@
+{
+"output_dir": "/Experiments/Pretraining",
+"model_name_or_path": "roberta-base",
+"train_file": "Dataset/nle_train.txt",
+"validation_file": "Dataset/placeholder_valid.txt",
+"per_device_train_batch_size": 64 ,
+"per_device_eval_batch_size": 32 ,
+"gradient_accumulation_steps": 16 ,
+"max_seq_length": 512 ,
+"warmup_ratio": 0.048 ,
+"learning_rate": 6e-4 ,
+"weight_decay": 0.01 ,
+"adam_epsilon": 1e-6 ,
+"adam_beta1": 0.9 ,
+"adam_beta2": 0.98 ,
+"num_train_epochs": 20,
+"logging_first_step": true ,
+"do_train": true,
+"do_eval": true ,
+"evaluation_strategy": "epoch" ,
+"report_to": "tensorboard",
+"logging_dir": "logs_here/",
+"remove_unused_columns": false
+}
+
+
